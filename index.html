@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhinav Nargani</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+
+
+    .container {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+
+    h2 {
+      color: rgb(98, 216, 216);
+      font-family: lato,sans-serif;
+    }
+
+    .image-container {
+      height: 60vh;
+      width: 100vw;
+      z-index: 0;
+      position: relative;
+    }
+
+    .image-container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .my-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center;
+    color: rgb(98, 216, 216);;
+    font-family: cursive;
+    z-index: 1;
+    }
+
+    .paragraph {
+      color: whitesmoke;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    } 
+
+    .my-name h1, .my-name p {
+      margin: 5px; /* Remove margin between h1 and p */
+    }
+
+    .pro {
+      text-decoration: underline;
+    }
+
+    .mountains {
+      position: absolute;
+    }
+
+    .about {
+      margin-top: 65px;
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile-image {
+      text-align: center;
+    }
+    .profile-info {
+      text-align: center;      
+    }
+    .profile-para {
+      line-height: 2.1;
+    }
+    
+    .about h3 {
+      margin-top: 1px;
+      color: rgb(98, 216, 216);
+      font-weight: 500;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .profile-para {
+      margin-top: 0px;
+      font-family: nunito, sans-serif;
+    }
+
+    .projects, .Experience, .Skill-set {
+      width: 45%; 
+      padding: 20px;
+      background-color: #F4F6FF;
+    } 
+    .projects-title {
+      text-decoration: underline;
+    }
+
+    .traffic-ul, .cache-ul, .community-ul, .zobaze-ul, .trendgab-ul, .lang-ul, .cloud-ul, .db-ul, .contact-ul{
+      font-family: nunito, sans-serif;
+      line-height: 2.1;
+    }
+
+    .projects h3 {
+      font-family: Lato, sans-serif;
+      line-height: 2;
+      color: rgb(98, 216, 216);
+    }
+
+    .experience-title {
+      text-decoration: underline;
+    }
+
+    .Experience h3 {
+      font-family: Lato, sans-serif;
+      line-height: 2;
+      color: rgb(98, 216, 216);
+    }
+
+    .projects-experience-container {
+      display: flex;
+      justify-content: space-around; /* Adds space between the columns */
+      align-items: flex-start; /* Aligns both sections to the top */
+      padding: 20px;
+      gap: 20px; 
+    } 
+
+    .Skill-set h3 {
+      font-family: Lato, sans-serif;
+      line-height: 2;
+      color: rgb(98, 216, 216);
+    }
+
+    .Skill-set h3 {
+      margin-bottom: 0;
+    }
+
+    .Skill-set ul {
+      margin-top: 0; /* Remove space before ul */
+    }
+    .Skill-set {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+
+    .Skill-set p {
+      font-family: Lato, sans-serif;
+      color: rgb(98, 216, 216);
+    }
+
+    .skill-title {
+      text-decoration: underline;
+    }
+
+    .contact {
+      margin-top: 80px;
+    }
+
+    .contact h2{
+      text-align: center;
+    }
+
+    .contact p {
+      text-align: center;
+    }
+
+    .footer {
+      display: flex;
+      margin-top: 80px;
+      justify-content: space-evenly;
+      background-color: #11cdd4;
+      height: 125px;
+      color: #088e93;
+      align-items: center;
+    }
+  
+    @media (max-width: 768px) {
+  .projects-experience-container {
+    display: block; /* Stack elements vertically */
+    align-items: center;
+    margin-left: 0; /* Ensure no extra left margin */
+    padding-right: 60px;
+  }
+
+  .about {
+    padding: 70px;
+  }
+  .contact {
+    margin: 40px 0px 40px 0px;
+  }
+  .projects, .Experience, .Skill-set {
+    width: 100%; /* Take full width of the container */
+    margin-left: 0;  /* Remove any left margin */
+    margin-bottom: 20px; /* Add some spacing between sections */
+  }
+}
+
+  </style>
+</head>
+<body>
+ <!--About Me Section--> 
+ <div>
+  <div class="container">
+    <div class="image-container">
+      <img class="mountains" src="./images/amazing-nature-scenery-mountains-under-600nw-2325348577.jpg.webp" width="50vw" alt="">
+      <div class="my-name">
+        <h1>I'm Abhinav Nargani</h1>
+        <p class="paragraph">"A <span class="pro">Pro</span>grammer"</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="profile-image">
+    <img class="profile-pic" src="./images/Screenshot 2024-10-24 at 4.37.09 PM.png" height="90" alt="">
+    </div>
+    <div class="profile-info">
+    <h2>Hello</h2>
+    <p class="profile-para"> I'm a Computer Science student pursuing Masters' from State University of New York at Albany. <br> I love hiking &#x1F9D7;, building capstone projects &#128187;, & coffee &#9749;
+      ;</p>
+    </div>
+  </div>
+<!-- Projects and Experience Section -->
+<div class="projects-experience-container">
+  <!-- Projects Section -->
+  <div class="projects">
+    <h2 class="projects-title">Projects</h2>
+    <h3>Community Hub 360</h3>
+    <ul class="community-ul">
+      <li>Developed a website with 4 modules namely Admin, Tenants, Security, and Maintenance using HTML, CSS, BootStrap, React, Nodejs, JavaScript, and MongoDB.</li>
+      <li>Each module works with different functionalities according to the module user requirements.</li>
+      <li>Included a marketplace feature within the app where tenants can buy goods from within the sellers from the community.</li>
+    </ul>
+
+    <h3>A Deep Learning Framework for Traffic Sign Detection under Challenging Weather Conditions</h3>
+    <ul class="traffic-ul">
+      <li>Developed an application capable of detecting and recognizing traffic signs even under challenging weather conditions.</li>
+      <li>Implemented VGG16 CNN Architecture to classify challenges present in the images.</li>
+      <li>Employed a CNN-based image deblurring method inspired by Deblur-GAN to enhance the corresponding challenges.</li>
+      <li>Utilized the YOLOv5 algorithm for traffic sign classification, achieving an accuracy of 89.5 percent.</li>
+    </ul>
+
+    <div class="cache">
+      <h3>Cache Investment Website</h3>
+      <p>
+        <ul class="cache-ul">
+          <li>Developed a good-looking web application that deals with investment and savings strategy using HTML, NodeJS, and MongoDB.</li>
+          <li>Project was used by 1000+ university students to manage their expenditures and have an idea of their savings and investments.</li>
+        </ul>
+      </p>
+  </div>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="Experience">
+    <h2 class="experience-title">Experience</h2>
+    <h3>Zobaze</h3>
+    <ul class="zobaze-ul">
+      <li>Created a content strategy for the company blog that attracted scores of new customers.</li>
+      <li>Coordinated with teammates to develop written, audio, and video content to increase the organic reach for the company.</li>
+    </ul>
+
+    <h3>TrendGab</h3>
+    <ul class="trendgab-ul">
+      <li>Founded a news/media website out of passion for article writing.</li>
+      <li>With 5576 followers on Instagram, TrendGab had a monthly reach of 150,000-200,000 accounts.</li>
+    </ul>
+    <br>
+<hr> 
+    <!-- Skill Set Section -->
+    <div class="Skill-set">
+      <h2 class="skill-title">Skill set</h2>
+      <h3>Programming languages</h3>
+      <ul class="lang-ul">
+        <li>C, C++, Java, Python, JS, HTML/CSS, ReactJS, AngularJS</li>
+      </ul>
+      <h3>Backend</h3>
+      <ul class="lang-ul">
+        <li>PHP, NodeJS, Django</li>
+      </ul>
+      <h3>Database</h3>
+      <ul class="db-ul">
+        <li>MongoDB, MySQL, PostgreSQL</li>
+      </ul>
+      <h3>Cloud</h3>
+      <ul class="cloud-ul">
+        <li>Amazon Web Services, Microsoft Azure</li>
+      </ul>
+    </div>
+  </div> 
+</div>
+
+<div class="contact">
+  <h2> Get in touch </h2>
+  <p class="contact-ul"> Feel free to contact me if you like sunsets as much as I do, we can talk how beautiful they're while we sip on some coffee and code together. 
+    <br>Cheers &#x1F64C;
+  </p>
+</div>
+
+<div class="footer">
+  <p>&#128188;
+    Linkedin </p>
+  <p>&#128222; 7034779646</p>
+  <p> &#128231;
+    Mail: abhinavnaragani783@gmail.com</p>
+</div>
+</div>
+
+</body>
+</html>
